@@ -1,0 +1,25 @@
+.footer {
+  &__elem {
+    background-color: #004c83;
+    padding: 32px 0 72px;
+  }
+  &__icon-block{
+    width: 130px;
+    height: 40px;
+    float: left;
+    >ul{
+      margin: 0;
+      padding: 2px 0 0 16px;
+    }
+  }
+  &__footer-text {
+    width: 78%;
+    float: right;
+    height: 40px;
+    font-family: $fontMedium;
+    padding-left: 11px;
+    @media (min-width: 1200px) {
+      width: 81%;
+    }
+  }
+}

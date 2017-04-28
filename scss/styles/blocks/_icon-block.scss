@@ -1,0 +1,15 @@
+.icon-block {
+  margin: 0 auto 20px;
+  display: table;
+  @media (min-width: 640px) {
+    margin: 0;
+    display: block;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 7px;
+  }
+  &__link {
+    text-decoration: none;
+  }
+}

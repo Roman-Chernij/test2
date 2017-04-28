@@ -1,0 +1,32 @@
+.social {
+  margin: 0;
+  text-align: center;
+  padding: 20px 1.9px 0 0;
+  @media (min-width: 1023px) {
+    padding: 0 1.9px 0 0;
+    text-align: right;
+  }
+  &__item {
+    display: inline-block;
+    background-color: $white;
+    border-radius: 50%;
+    margin-left: 8px;
+    transition:  background-color ease-in-out 350ms;
+    &:hover {
+      background-color: #0099eb;
+      transition:  background-color ease-in-out 350ms;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: #004c83;
+    font-size: 32px;
+    transition: color ease-in-out 500ms;
+
+  }
+}
+
+.social__item:hover>.social__link{
+    color:$white;
+    transition: color ease-in-out 500ms;
+}

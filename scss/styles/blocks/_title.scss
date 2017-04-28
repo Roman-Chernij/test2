@@ -1,0 +1,184 @@
+.title {
+  text-decoration: none;
+  display: block;
+  &_padding-section {
+    padding-left: 0;
+    text-align: center;
+    @media (min-width: 1200px) {
+      padding-left: 89px;
+      text-align: left;
+    }
+  }
+  &__item {
+    font-family: $oneFont;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0 auto;
+    color: $white;
+    padding: 12px 0;
+    @media (min-width: 640px) {
+      font-size: 46px;
+      padding: 24px 0;
+    }
+    @media (min-width: 800px) {
+
+      font-size: 53px;
+    }
+    &_mod-font-size {
+      font-size: 32px;
+      padding: 16px 0 16px;
+      position: relative;
+      @media (min-width: 640px) {
+        padding: 33px 0 29px;
+      }
+      @media (min-width: 720px) {
+        font-size: 35px;
+      }
+      @media (min-width: 840px) {
+        font-size: 40px;
+      }
+    }
+  }
+  &_padding-event {
+    padding-left: 0;
+    text-align: center;
+    @media (min-width: 830px) {
+      padding-left: 167px;
+      text-align: left;
+    }
+  }
+  &_padding-here {
+    padding-left: 0;
+    text-align: center;
+    @media (min-width: 830px) {
+      padding-left: 199px;
+      text-align: left;
+    }
+  }
+  &-box {
+    background-image: url('../img/bg-title.png');
+    background-repeat: no-repeat;
+    margin-left: -1.66rem;
+    margin-right: -1.66rem;
+    @media (min-width: 640px) {
+      margin-left: -1.63rem;
+      margin-right: -1.63rem;
+    }
+    @media (min-width: 1024px) {
+      margin-left: -0.95rem;
+      margin-right: -0.95rem;
+    }
+    @media (min-width: 1200px) {
+      margin: 0 -0.9375rem 0;
+    }
+      &_bg-color-1 {
+        background-color: $bg-color-1;
+        &:hover {
+          background-color: rgba($bg-color-1, 0.6);
+          transition: all ease-in-out 350ms;
+        }
+        &:active {
+          background-color: rgba($bg-color-1, 0.9);
+          transition: all ease-in-out 250ms;
+        }
+      }
+      &_bg-color-2 {
+        background-color: $bg-color-2;
+        &:hover {
+          background-color: rgba($bg-color-2, 0.6);
+          transition: all ease-in-out 350ms;
+        }
+        &:active {
+          background-color: rgba($bg-color-2, 0.9);
+          transition: all ease-in-out 250ms;
+        }
+      }
+      &_bg-color-3 {
+        background-color: $bg-color-3;
+        &:hover {
+          background-color: rgba($bg-color-3, 0.6);
+          transition: all ease-in-out 350ms;
+        }
+        &:active {
+          background-color: rgba($bg-color-3, 0.9);
+          transition: all ease-in-out 250ms;
+        }
+      }
+      &_bg-color-4 {
+        background-color: $bg-color-4;
+        &:hover {
+          background-color: rgba($bg-color-4, 0.6);
+          transition: all ease-in-out 350ms;
+        }
+        &:active {
+          background-color: rgba($bg-color-4, 0.9);
+          transition: all ease-in-out 250ms;
+        }
+      }
+  }
+  &__icon {
+    font-size: 19px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 2px 0;
+    vertical-align: 11px;
+    margin-right: 2px;
+    @media (min-width: 720px) {
+      font-size: 24px;
+    }
+    &_mod-position1 {
+      position: relative;
+      font-size: 13px;
+      vertical-align: middle;
+      @media (min-width: 720px) {
+        font-size: 17px;
+      }
+      @media (min-width: 1200px) {
+        position: absolute;
+        top: 42px;
+        right: 80px;
+      }
+    }
+    &_mod-position2 {
+      position: relative;
+      vertical-align: middle;
+      font-size: 13px;
+      @media (min-width: 720px) {
+        font-size: 17px;
+      }
+      @media (min-width: 1200px) {
+        position: absolute;
+        top: 42px;
+        right: 64px;
+      }
+    }
+    &_mod-position3 {
+      position: relative;
+      vertical-align: middle;
+      font-size: 13px;
+      @media (min-width: 720px) {
+        font-size: 17px;
+      }
+      @media (min-width: 1200px) {
+        position: absolute;
+        top: 42px;
+        right: 83px;
+      }
+    }
+  }
+  &_bg-position {
+    background-size: cover;
+    background-position: -20px -19px;
+  }
+}
+
+.title-event_bg-position {
+  background-size: initial;
+  background-position: -14px -11px;
+}
+
+.title-here_bg-position {
+  background-size: initial;
+  background-position: -8px -9px;
+}

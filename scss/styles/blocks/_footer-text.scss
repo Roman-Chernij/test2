@@ -1,0 +1,94 @@
+.footer-text {
+  &__address {
+    font-family: inherit;
+    color: #bbcfde;
+    line-height: 1.7;
+    margin-left: 0;
+    text-align: center;
+    @media (min-width: 1024px) {
+      text-align: left;
+      margin-left: -24px;
+    }
+    @media (min-width: 1070px) {
+      margin-left: -46px;
+    }
+    >a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 16.3px;
+      padding-right: 8px;
+      position: relative;
+      &::before {
+        display: none;
+      }
+      &:hover {
+        color: #96a1b2;
+        transition: color ease-in-out 350ms;
+      }
+      &:active {
+        color: #d2f0ff;
+        transition: color ease-in-out 250ms;
+      }
+      @media (min-width: 496px) {
+      >a {
+        &::before {
+          content: '';
+          width: 17px;
+          height: 2px;
+          background-color: #bbcfde;
+          position: absolute;
+          top: 7px;
+          right: -8px;
+          transform: rotate(90deg);
+        }
+      }
+      }
+    }
+    >address{
+      font-style: normal;
+      display: inline-block;
+      font-size: 16.5px;
+      position: relative;
+      @media (min-width: 390px) {
+        >span {
+          padding-left: 7.2px;
+          display: inline;
+          &::after {
+            content: '';
+            width: 17px;
+            height: 2px;
+            background-color: #bbcfde;
+            position: absolute;
+            top: 11px;
+            left: 178.4px;
+            transform: rotate(90deg);
+          }
+        }
+      }
+      address > span {
+        padding-left: 0;
+        display: block;
+        text-align: center;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  &__item {
+    font-family: inherit;
+    color: #bbcfde;
+    font-size: 16.5px;
+    margin-left: 0;
+    text-align: center;
+    display: block;
+    @media (min-width: 1024px) {
+      text-align: left;
+      display: inline;
+      margin-left: -24px;
+    }
+    @media (min-width: 1070px) {
+      margin-left: -46px;
+    }
+  }
+}
