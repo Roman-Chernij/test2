@@ -1,13 +1,16 @@
 .form {
   &__radio {
-    padding-top: 18.1px;
-    padding-left: 36px;
+    padding-top: 17.1px;
+    padding-left: 28px;
     position: relative;
     cursor: pointer;
+    &:active {
+      background-color: #fff;
+    }
   }
   &__required {
     font-family: $fontMedium;
-    margin: 31px 0 8px;
+    margin: 25px 0 8px;
     display: block;
     font-size: 15.1px;
     color: #6a6a6a;

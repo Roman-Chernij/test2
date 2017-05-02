@@ -1,0 +1,17 @@
+.line-middle {
+  &::before{
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    &::before {
+      display: block;
+      content: '';
+      width: 8px;
+      height: 53.9%;
+      position: absolute;
+      top: 10.6%;
+      left: 49.8%;
+      background-color: #7dafd6;
+    }
+  }
+}

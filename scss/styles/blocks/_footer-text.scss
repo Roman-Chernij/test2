@@ -30,18 +30,17 @@
         transition: color ease-in-out 250ms;
       }
       @media (min-width: 496px) {
-      >a {
-        &::before {
-          content: '';
-          width: 17px;
-          height: 2px;
-          background-color: #bbcfde;
-          position: absolute;
-          top: 7px;
-          right: -8px;
-          transform: rotate(90deg);
-        }
-      }
+          &::before {
+            content: '';
+            width: 17px;
+            height: 2px;
+            background-color: #bbcfde;
+            position: absolute;
+            top: 7px;
+            right: -8px;
+            transform: rotate(90deg);
+            display: block;
+          }
       }
     }
     >address{
@@ -51,7 +50,7 @@
       position: relative;
       @media (min-width: 390px) {
         >span {
-          padding-left: 7.2px;
+          padding-left: 18.2px;
           display: inline;
           &::after {
             content: '';

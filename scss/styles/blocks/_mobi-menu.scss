@@ -1,12 +1,12 @@
 .mobi-menu {
-  width: 200px;
-  height: 200px;
-  background-color: red;
+  width: 280px;
+  background-color: rgba(#fff, 0.9);
   position: absolute;
-  top: 240px;
+  top: 226px;
   left: 50%;
-  margin-left: -100px;
-  transform: translate3d(0, 1000px, 0);
+  padding: 15px;
+  margin-left: -140px;
+  z-index: 50;
   animation: bounceBlock ease-in-out 0.8s;
   animation-fill-mode: forwards;
   @media (min-width: 787px) {

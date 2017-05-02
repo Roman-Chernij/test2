@@ -142,3 +142,10 @@ $bg-color-4:#168ec8;
 .row_padding {
 	padding: 0;
 }
+
+.section .row .columns-last_float {
+	float: right;
+	@media (min-width: 640px) and (max-width: 1024px)  {
+		float: none;
+	}
+}

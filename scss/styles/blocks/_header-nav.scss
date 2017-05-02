@@ -45,13 +45,19 @@
         }
       }
     &:first-child a{
-      padding: 4px 6px 4px 0;
+      padding: 0;
+      @media (min-width: 787px) {
+        padding: 4px 6px 4px 0;
+      }
         @media (min-width: 1084px) {
           padding: 4px 10px 4px 0;
         }
     }
     &:last-child a{
-      padding: 4px 0 4px 6px;
+      padding: 0;
+        @media (min-width: 787px) {
+          padding: 4px 0 4px 6px;
+        }
         @media (min-width: 1084px) {
           padding: 4px 0 4px 10px;
         }
@@ -60,7 +66,7 @@
   &__link {
     font-family: $fourFont;
     font-size: 18px;
-    padding: 4px 6px;
+    padding: 4px 0;
     text-decoration: none;
     color: $akcentColor;
     transition: all ease-in-out 100ms;
@@ -78,6 +84,9 @@
         text-shadow:none;
         transition: all ease-in-out 150ms;
       }
+    @media (min-width: 787px) {
+      padding: 4px 6px;
+    }
     @media (min-width: 1084px) {
       padding: 4px 10px;
     }

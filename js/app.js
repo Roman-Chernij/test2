@@ -5,14 +5,6 @@ window.addEventListener( "DOMContentLoaded", function() {
     new MyScript();
 });
 
-window.addEventListener("resize", function () {
-    new ScriptAtResize()
-});
-
-function ScriptAtResize () {
-    new WidthDocoment();
-}
-
 function MyScript() {
   new MyBurger();
 }
@@ -30,21 +22,3 @@ MyBurger.prototype.burgerAddEvent = function () {
 };
 
 
-function WidthDocoment() {
-    this.ww = innerWidth;
-    console.log(this.ww);
-    this.addMobiMenu();
-}
-
-WidthDocoment.prototype.addMobiMenu = function () {
-    this.headCenter = document.querySelector('.head-center');
-    this.str = '<div></div>';
-    if(this.ww == '786'){
-        this.nav = document.querySelector('.nav__nav-list');
-        this.cloneNav = this.nav.cloneNode(true);
-        this.str = '<div>'+this.cloneNav+'</div>';
-        this.headCenter.insertAdjacentHTML('beforeBegin', this.str);
-        alert(this.cloneNav)
-    }
-    return;
-};
