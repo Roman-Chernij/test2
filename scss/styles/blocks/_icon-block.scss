@@ -1,13 +1,18 @@
 .icon-block {
-  margin: 0 auto 20px;
   display: table;
-  @media (min-width: 640px) {
+  margin: 0 21px 0 0;
+  float: left;
+  @include breakpoint(large down){
     margin: 0;
-    display: block;
+  }
+  @include breakpoint(medium down){
+    margin: 0 auto 20px;
+    float: none;
   }
   &__item {
-    display: inline-block;
-    margin-right: 7px;
+    float: left;
+    margin-right: 12px;
+    list-style-type: none;
   }
   &__link {
     text-decoration: none;

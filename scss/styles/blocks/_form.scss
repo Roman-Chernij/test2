@@ -1,5 +1,5 @@
 .form {
-  &__radio {
+  &__checkbox {
     padding-top: 17.1px;
     padding-left: 28px;
     position: relative;
@@ -16,13 +16,7 @@
     color: #6a6a6a;
   }
   &__input {
-    border: 3px solid #cfcfcf;
-    outline: none;
-    padding: 10px 10px 10px 14.8px;
-    font-size: 16px;
-    margin: 0 0 13px;
     height: 48.8px;
-    color: $colorFontInput;
     &_mod-display {
       display: block;
       @media (min-width: 475px) {
@@ -94,10 +88,16 @@
 .input-position_left {
   width: 100%;
   margin-right: 0;
+  margin-bottom: 13px;
   @media (min-width: 475px) {
     width: 50.9%;
+    margin-bottom: 0;
   }
   @media (min-width: 1201px) {
     margin-right: 7px;
   }
+}
+
+.input-field{
+  margin: 0 0 13px;
 }

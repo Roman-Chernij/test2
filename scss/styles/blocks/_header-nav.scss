@@ -1,9 +1,16 @@
+.title-bar {
+  display: block;
+  @include breakpoint(medium down) {
+    display: none;
+  }
+}
+
 .nav {
   padding-left: 0;
   padding-top: 5px;
   text-align: right;
   display: none;
-  @media (min-width: 787px) {
+  @media (min-width: 1020px) {
     display: block;
   }
   @media (min-width: 1200px) {
@@ -12,21 +19,31 @@
     &__nav-list {
       margin-bottom: 0.71rem;
       margin-left: 0;
+      padding-left: 20px;
+      float: none;
       @media (min-width: 1111px) {
         margin-left: 1.25rem;
+      }
+      @media (min-width: 1020px) {
+        padding-left: 0;
+        float: right;
       }
     }
 }
 
 .nav-list {
   &__item {
-    display: block;
+    float: none;
     position: relative;
+    list-style-type: none;
+    margin-bottom: 10px;
     &:before {
       display: none;
     }
-    @media (min-width: 787px) {
-      display: inline-block;
+    @media (min-width: 1020px) {
+      float: left;
+      margin-bottom: 0;
+
       &:before {
         content: '';
         width:5px;
@@ -46,19 +63,13 @@
       }
     &:first-child a{
       padding: 0;
-      @media (min-width: 787px) {
-        padding: 4px 6px 4px 0;
-      }
-        @media (min-width: 1084px) {
+        @media (min-width: 1020px) {
           padding: 4px 10px 4px 0;
         }
     }
     &:last-child a{
       padding: 0;
-        @media (min-width: 787px) {
-          padding: 4px 0 4px 6px;
-        }
-        @media (min-width: 1084px) {
+        @media (min-width: 1020px) {
           padding: 4px 0 4px 10px;
         }
     }
@@ -84,11 +95,19 @@
         text-shadow:none;
         transition: all ease-in-out 150ms;
       }
-    @media (min-width: 787px) {
-      padding: 4px 6px;
+    @media (min-width: 1020px) {
+      padding: 4px 9px;
     }
-    @media (min-width: 1084px) {
-      padding: 4px 10px;
+    @media (min-width: 1101px) {
+      padding: 4px 13px;
     }
+  }
+}
+
+.title-bar {
+  display: block;
+  background-color: transparent;
+  @media (min-width: 1020px) {
+    display: none;
   }
 }

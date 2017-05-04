@@ -43,7 +43,7 @@
 // 1. Global
 // ---------
 
-$global-width: rem-calc(1230);
+$global-width: rem-calc(1200);
 $global-font-size: 100%;
 $global-lineheight: 1.525;
 $primary-color: #000;
@@ -51,7 +51,7 @@ $secondary-color: #10523a;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #e6e6e6;
+$light-gray: #fff;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
@@ -74,10 +74,10 @@ $rem-base: 16px;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
-  large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1201px,
+  medium: 500px,
+  large: 780px,
+  xlarge: 900px,
+  xxlarge: 1200px,
 );
 $breakpoint-classes: (small medium large);
 
@@ -87,9 +87,9 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 54px,
-  medium: 52px,
-  large: 30px,
+  small: 20px,
+  medium: 30px,
+  large: 15px,
 );
 $block-grid-max: 6;
 
@@ -170,7 +170,7 @@ $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
-$subheader-margin-bottom: 0.5rem;
+$subheader-margin-bottom: 1rem;
 $stat-font-size: 2.5rem;
 
 // 6. Abide
@@ -324,8 +324,8 @@ $helptext-font-style: italic;
 $input-prefix-color: $black;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
-$input-prefix-padding: 1rem;
-$form-label-color: #848484;
+$input-prefix-padding: 0;
+$form-label-color: #6a6a6a;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
@@ -338,7 +338,7 @@ $input-font-size: rem-calc(16);
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid #808080;
+$input-border: 3px solid #cfcfcf;
 $input-border-focus: 1px solid #808080;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;

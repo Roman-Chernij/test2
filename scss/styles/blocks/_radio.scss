@@ -1,4 +1,4 @@
-.radio {
+.checkbox {
   &__label {
     display: block;
     font-family: $fontMedium;
@@ -26,16 +26,16 @@
   }
 }
 
-input[type="radio"] {
+input[type="checkbox"] {
   display: none;
 }
 
-input:checked+.radio__label  {
+input:checked+.checkbox__label  {
   &::after {
     content: '\2714';
     position: absolute;
-    top: 2px;
-    left: -31px;
+    top: 1px;
+    left: -30px;
     color: $akcentColor;
     font-size: 17px;
   }

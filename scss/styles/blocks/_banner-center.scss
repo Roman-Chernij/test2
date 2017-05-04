@@ -1,0 +1,85 @@
+.banner-center-box {
+  background-color: rgba(#185379, 1);
+  width: 100%;
+  @media (min-width: 1070px) {
+    border-radius: 50%;
+    margin-top: 49px;
+    padding: 11px;
+    width: 361px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(#185379, 0.8);
+  }
+}
+
+.banner-center {
+  font-family: $twoFont;
+  border-radius: 50%;
+  border: none;
+  padding: 35px 0 43px 0;
+  @media (min-width: 1070px) {
+    border: 1px solid #0796ea;
+
+  }
+  @include breakpoint(small down) {
+    padding: 15px 0 15px 0;
+  }
+    &__img {
+      width: 67px;
+      height: 62px;
+      margin: 0 auto 21px;
+      @include breakpoint(small down){
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 10px;
+      }
+    }
+    &__title {
+      font-family: inherit;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      font-size: 43.4px;
+      margin-bottom: 25px;
+      line-height: 0.95;
+      position: relative;
+        &::after {
+          content: '';
+          width: 198px;
+          height: 1px;
+          position: absolute;
+          bottom: -16px;
+          left: 50%;
+          background-color: #64cef4;
+          transform: translateX(-50%);
+        }
+      @include breakpoint(medium down) {
+        font-size: 35px;
+      }
+      @include breakpoint(small down){
+        font-size: 30px;
+      }
+    }
+    &__time {
+      font-family: inherit;
+      color: $white;
+      text-align: center;
+      display: block;
+      font-size: 31px;
+      padding: 0 100px;
+      line-height: 1.1;
+      @include breakpoint(medium down) {
+        font-size: 25px;
+        padding: 0 86px;
+      }
+      @include breakpoint(small down) {
+        font-size: 20px;
+        padding: 0 20px;
+      }
+    }
+}
+.img__item {
+  width: 100%;
+}

@@ -1,4 +1,8 @@
-
+.header {
+  z-index: 100;
+  position: relative;
+  overflow: hidden;
+}
 .header-bg {
   background-image: url('../img/head-bg.jpg');
   background-repeat: no-repeat;

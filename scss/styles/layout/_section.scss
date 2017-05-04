@@ -1,12 +1,5 @@
 .section {
-  margin-top: -68px;
   position: relative;
-  @media (min-width: 640px) {
-    margin-top: -98px;
-  }
-  @media (min-width: 800px) {
-    margin-top: -104px;
-  }
     &__title {
       font-family: $threeFont;
       color: #0f578b;
@@ -21,16 +14,22 @@
         }
     }
     &__event {
-      padding: 36px 0 30px 0;
+      padding: 36px 0 30px;
       position: relative;
       @media (min-width: 1024px) {
         padding: 36px 19px 191px 41px;
+      }
+      @include breakpoint(medium down) {
+        padding: 0 0 30px;
       }
     }
     &__form {
       padding: 35px 0 54px;
       @media (min-width: 1024px) {
         padding: 35px 49px 54px 48px;
+      }
+      @include breakpoint(medium down) {
+        padding: 35px 0 20px;
       }
     }
     &__full-img {

@@ -4,14 +4,11 @@
     color: #bbcfde;
     line-height: 1.7;
     margin-left: 0;
+    text-align: left;
+    overflow: hidden;
+    @include breakpoint(medium down) {
     text-align: center;
-    @media (min-width: 1024px) {
-      text-align: left;
-      margin-left: -24px;
-    }
-    @media (min-width: 1070px) {
-      margin-left: -46px;
-    }
+  }
     >a {
       color: inherit;
       text-decoration: none;
@@ -79,15 +76,10 @@
     color: #bbcfde;
     font-size: 16.5px;
     margin-left: 0;
-    text-align: center;
-    display: block;
-    @media (min-width: 1024px) {
-      text-align: left;
-      display: inline;
-      margin-left: -24px;
-    }
-    @media (min-width: 1070px) {
-      margin-left: -46px;
+    text-align: left;
+    @include breakpoint(medium down) {
+      text-align: center;
+      display: block;
     }
   }
 }

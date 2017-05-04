@@ -2,28 +2,40 @@
   text-decoration: none;
   display: block;
   &_padding-section {
-    padding-left: 0;
     text-align: center;
-    @media (min-width: 1200px) {
-      padding-left: 89px;
-      text-align: left;
-    }
   }
   &__item {
     font-family: $oneFont;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 53px;
+    padding: 24px 10px 32px;
     margin: 0 auto;
     color: $white;
-    padding: 12px 0;
-    @media (min-width: 640px) {
+    &::before {
+      content: '\e800';
+      font-size: 19px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 2px 0;
+      vertical-align: 8px;
+      margin-right: 7px;
+    }
+    @include breakpoint(large down) {
       font-size: 46px;
-      padding: 24px 0;
     }
-    @media (min-width: 800px) {
-
-      font-size: 53px;
+    @include breakpoint(medium down){
+      font-size: 40px;
+      padding: 12px 10px;
     }
+    @include breakpoint(small down) {
+      font-size: 34px;
+    }
+      @media (min-width: 720px) {
+        &::before {
+          font-size: 24px;
+        }
+      }
     &_mod-font-size {
       font-size: 32px;
       padding: 16px 0 16px;
@@ -40,78 +52,66 @@
     }
   }
   &_padding-event {
-    padding-left: 0;
     text-align: center;
-    @media (min-width: 830px) {
-      padding-left: 167px;
-      text-align: left;
-    }
   }
   &_padding-here {
-    padding-left: 0;
     text-align: center;
-    @media (min-width: 830px) {
-      padding-left: 199px;
-      text-align: left;
-    }
   }
   &-box {
     background-image: url('../img/bg-title.png');
     background-repeat: no-repeat;
-    margin-left: -1.66rem;
-    margin-right: -1.66rem;
-    @media (min-width: 640px) {
-      margin-left: -1.63rem;
-      margin-right: -1.63rem;
+    margin-left: -0.46875rem;
+    margin-right: -0.46875rem;
+    @include breakpoint(medium down) {
+      margin-left: -0.9375rem;
+      margin-right: -0.9375rem;
     }
-    @media (min-width: 1024px) {
-      margin-left: -0.95rem;
-      margin-right: -0.95rem;
-    }
-    @media (min-width: 1200px) {
-      margin: 0 -0.9375rem 0;
+    @include breakpoint(small down) {
+      margin-left: -0.625rem;
+      margin-right: -0.625rem;
+
     }
       &_bg-color-1 {
         background-color: $bg-color-1;
         &:hover {
-          background-color: rgba($bg-color-1, 0.6);
+          background-color: $bg-colorHover-1;
           transition: all ease-in-out 350ms;
         }
         &:active {
-          background-color: rgba($bg-color-1, 0.9);
+          background-color: $bg-color-1;
           transition: all ease-in-out 250ms;
         }
       }
       &_bg-color-2 {
         background-color: $bg-color-2;
         &:hover {
-          background-color: rgba($bg-color-2, 0.6);
+          background-color: $bg-colorHover-2;
           transition: all ease-in-out 350ms;
         }
         &:active {
-          background-color: rgba($bg-color-2, 0.9);
+          background-color: $bg-color-2;
           transition: all ease-in-out 250ms;
         }
       }
       &_bg-color-3 {
         background-color: $bg-color-3;
         &:hover {
-          background-color: rgba($bg-color-3, 0.6);
+          background-color: $bg-colorHover-3;
           transition: all ease-in-out 350ms;
         }
         &:active {
-          background-color: rgba($bg-color-3, 0.9);
+          background-color: $bg-color-3;
           transition: all ease-in-out 250ms;
         }
       }
       &_bg-color-4 {
         background-color: $bg-color-4;
         &:hover {
-          background-color: rgba($bg-color-4, 0.6);
+          background-color: $bg-colorHover-4;
           transition: all ease-in-out 350ms;
         }
         &:active {
-          background-color: rgba($bg-color-4, 0.9);
+          background-color: $bg-color-4;
           transition: all ease-in-out 250ms;
         }
       }

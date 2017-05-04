@@ -1,10 +1,13 @@
 .phone {
-  text-align: center;
+  text-align: right;
   padding: 24px 0 0 0;
   margin-right: -3px;
-  @media (min-width: 787px) {
-    text-align: right;
+  @media (min-width: 1070px) {
     padding: 37px 0 0 0;
+  }
+  @include breakpoint(small down) {
+    text-align: center;
+    transform: translateX(10%);
   }
   &__item {
     text-decoration: none;
@@ -33,5 +36,12 @@
       top: 5px;
       left: -52px;
     }
+    @include breakpoint(large down) {
+      font-size: 20px;
+    }
+    @include breakpoint(medium down) {
+      font-size: 18px;
+    }
+
   }
 }

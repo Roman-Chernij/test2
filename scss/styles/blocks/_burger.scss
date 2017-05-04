@@ -2,9 +2,8 @@
   display: block;
   width: 35px;
   height: 35px;
-  margin: 20px auto;
   @media (min-width: 787px) {
-    display: none;
+    //display: none;
   }
   &__item {
     display: block;
@@ -12,6 +11,7 @@
     height: 6px;
     background-color: $akcentColor;
     position: relative;
+    transform: translateY(15px);
     transition: all ease-in-out 200ms;
     &:active {
       background-color: transparent;
@@ -67,4 +67,8 @@
     transform: rotateZ(-45deg);
     transition: all ease-in-out 250ms;
   }
+}
+
+.menu-icon {
+  outline: none;
 }
