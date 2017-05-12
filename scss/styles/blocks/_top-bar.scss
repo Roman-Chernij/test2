@@ -1,0 +1,35 @@
+.top-bar {
+  background-color: transparent;
+  padding-top: 16px;
+  padding-bottom: 16px;
+    @media (min-width: 1020px) {
+      padding-bottom: 0;
+    }
+    &-left {
+      @include breakpoint(small down) {
+        width: auto;
+      }
+    }
+    &-right {
+        @include breakpoint(small down) {
+          width: auto;
+        }
+      }
+    ul {
+      background-color: transparent;
+    }
+}
+
+.top-bar .top-bar {
+  &-left {
+    @include breakpoint(small down) {
+      width: auto;
+    }
+  }
+  &-right {
+    text-align: left;
+    @include breakpoint(small down) {
+      width: auto;
+    }
+  }
+}

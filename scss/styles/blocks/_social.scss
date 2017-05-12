@@ -22,7 +22,9 @@
     color: #004c83;
     font-size: 32px;
     transition: color ease-in-out 500ms;
-
+    @include breakpoint(large down) {
+      font-size: 31px;
+    }
   }
 }
 

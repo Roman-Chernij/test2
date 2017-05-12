@@ -1,27 +1,31 @@
-.banner-center-box {
+
+
+.banner-center {
+  font-family: $twoFont;
+  padding: 48px 0 51px 0;
   background-color: rgba(#185379, 1);
   width: 100%;
   @media (min-width: 1070px) {
     border-radius: 50%;
-    margin-top: 49px;
-    padding: 11px;
+    margin-top: 45px;
     width: 361px;
     position: absolute;
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(#185379, 0.8);
-  }
-}
+      &::after {
+        content: '';
+        display: block;
+        border: 1px solid #0796ea;
+        width: 335px;
+        height: 324px;
+        position: absolute;
+        top: 17px;
+        left: 13px;
+        border-radius: 50%;
 
-.banner-center {
-  font-family: $twoFont;
-  border-radius: 50%;
-  border: none;
-  padding: 35px 0 43px 0;
-  @media (min-width: 1070px) {
-    border: 1px solid #0796ea;
-
+      }
   }
   @include breakpoint(small down) {
     padding: 15px 0 15px 0;
@@ -42,15 +46,18 @@
       text-align: center;
       color: $white;
       font-size: 43.4px;
-      margin-bottom: 25px;
+      padding-bottom: 16px;
+      margin-bottom: 9px;
       line-height: 0.95;
       position: relative;
+      padding-left: 30px;
+      padding-right: 30px;
         &::after {
           content: '';
           width: 198px;
           height: 1px;
           position: absolute;
-          bottom: -16px;
+          bottom: 0;
           left: 50%;
           background-color: #64cef4;
           transform: translateX(-50%);
@@ -68,8 +75,8 @@
       text-align: center;
       display: block;
       font-size: 31px;
-      padding: 0 100px;
       line-height: 1.1;
+      padding: 0 90px;
       @include breakpoint(medium down) {
         font-size: 25px;
         padding: 0 86px;

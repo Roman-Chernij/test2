@@ -1,0 +1,64 @@
+
+.fixed-top-bar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  background-color: rgba($white, 0.8);
+  transition: background-color ease-in-out 340ms;
+  z-index: 110;
+  transform: translateX(-50%);
+  animation: flipInX ease-in-out 1s;
+  animation-fill-mode: forwards;
+  transform-origin: top;
+}
+
+
+.fixed-top-bar:hover {
+  background-color: rgba($white, 1);
+  transition: background-color ease-in-out 340ms;
+}
+
+
+@keyframes flipInX {
+  from {
+    transform: perspective(1000px) rotate3d(1, 0, 0, 90deg) translateX(-50%);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(1000px) rotate3d(1, 0, 0, -20deg) translateX(-50%);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(1000px) rotate3d(1, 0, 0, 10deg) translateX(-50%);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(1000px) rotate3d(1, 0, 0, -5deg) translateX(-50%);
+  }
+
+  to {
+    transform: perspective(1000px) translateX(-50%);
+  }
+}
+
+.fixed-top-bar_hide {
+  animation: t ease-in-out 0.7s;
+  animation-fill-mode: forwards;
+  transform-origin: top;
+}
+
+@keyframes t {
+  from {
+    transform: perspective(1000px) translateX(-50%);
+  }
+  to {
+    transform: perspective(1000px) rotate3d(1, 0, 0, -90deg) translateX(-50%);
+    animation-timing-function: ease-in;
+    opacity: 0;
+
+  }
+}

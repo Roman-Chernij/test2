@@ -1,21 +1,12 @@
 .phone {
-  text-align: right;
-  padding: 24px 0 0 0;
-  margin-right: -3px;
-  @media (min-width: 1070px) {
-    padding: 37px 0 0 0;
-  }
-  @include breakpoint(small down) {
-    text-align: center;
-    transform: translateX(10%);
-  }
-  &__item {
     text-decoration: none;
     color: $akcentColor;
-    font-size: 22.2px;
+    font-size: 17px;
     font-family: $threeFont;
     position: relative;
     transition: color ease-in-out 250ms;
+    margin-bottom: 15px;
+    margin-top: 10px;
     &:hover {
       color: #00619e;
       transition: color ease-in-out 300ms;
@@ -24,24 +15,29 @@
       color: #0084d5;
       transition: color ease-in-out 260ms;
     }
-    &::after {
-      content: '';
-      background-image: url(../img/iconPhone.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: top center;
-      width: 40px;
-      height: 20px;
-      position: absolute;
-      top: 5px;
-      left: -52px;
+    @media (min-width: 1020px) {
+      font-size: 22.2px;
+      text-align: right;
+      margin-bottom: 0;
+      margin-top: 0;
+      &::after {
+        content: '';
+        background-image: url(../img/iconPhone.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 40px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 207px;
+      }
     }
-    @include breakpoint(large down) {
-      font-size: 20px;
-    }
-    @include breakpoint(medium down) {
-      font-size: 18px;
-    }
+}
 
+.top-bar-right > .phone {
+  display: none;
+  @media (min-width: 1020px) {
+    display: block;
   }
 }

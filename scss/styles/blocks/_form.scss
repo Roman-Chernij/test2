@@ -43,26 +43,15 @@
     }
   }
   &__btn {
-    display: none;
-    &-label {
-      background-color: #4baccf;
-      color: #fff;
-      width: 182px;
-      margin-top: 24px;
-      padding-bottom: 3px;
-      font-size: 24px;
-      text-transform: uppercase;
-      font-family: $fourFont;
-      padding-left: 20px;
-      cursor: pointer;
-      transition:  all ease-in-out 300ms;
-        &:hover{
-          box-shadow: 3px 3px 12px #4fbce1;
-          transition:  box-shadow ease-in-out 450ms;
-        }
-        &:active {
-          box-shadow: 3px 3px 12px #3f799b inset;
-        }
+    text-transform: uppercase;
+    font-family: $fourFont;
+    transition:  all ease-in-out 300ms;
+    &:hover{
+      box-shadow: 3px 3px 12px #4fbce1;
+      transition:  box-shadow ease-in-out 450ms;
+    }
+    &:active {
+      box-shadow: 3px 3px 12px #3f799b inset;
     }
   }
 }
@@ -73,6 +62,7 @@
   border-radius: 50%;
   margin-right: 12px;
   padding: 2px 0;
+  vertical-align: 2px;
 }
 
 .input-position_rigth {
@@ -100,4 +90,32 @@
 
 .input-field{
   margin: 0 0 13px;
+}
+
+.field {
+  &__item {
+    width: 100%;
+    padding: 0 5px;
+    @media (min-width: 450px) {
+      width: 50%;
+    }
+  }
+  &_two-elements {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  &_element-left {
+    float: none;
+    margin-bottom: 13px;
+    @media (min-width: 450px) {
+      float: left;
+      margin-bottom: 0;
+    }
+  }
+  &_element-rigth {
+    float: none;
+    @media (min-width: 450px) {
+      float: right;
+    }
+  }
 }

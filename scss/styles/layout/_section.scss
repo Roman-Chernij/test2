@@ -1,9 +1,10 @@
 .section {
   position: relative;
+  z-index: 11;
+  background-color: #fff;
     &__title {
       font-family: $threeFont;
       color: #0f578b;
-      font-size: 29.2px;
       margin-bottom: 0;
         &_mod-margin {
           margin-bottom: 9px;
@@ -17,7 +18,7 @@
       padding: 36px 0 30px;
       position: relative;
       @media (min-width: 1024px) {
-        padding: 36px 19px 191px 41px;
+        padding: 36px 19px 123px 41px;
       }
       @include breakpoint(medium down) {
         padding: 0 0 30px;
@@ -31,8 +32,5 @@
       @include breakpoint(medium down) {
         padding: 35px 0 20px;
       }
-    }
-    &__full-img {
-      width: 100%;
     }
 }

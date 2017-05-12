@@ -2,9 +2,6 @@
   display: block;
   width: 35px;
   height: 35px;
-  @media (min-width: 787px) {
-    //display: none;
-  }
   &__item {
     display: block;
     width: 100%;
@@ -45,6 +42,44 @@
   }
 }
 
+@include breakpoint(small down) {
+  .burger {
+    width: 25px;
+    height: 25px;
+    &__item {
+      display: block;
+      width: 100%;
+      height: 4px;
+      transform: translateY(15px);
+      transition: all ease-in-out 200ms;
+      &:active {
+        background-color: transparent;
+        &:after{
+          top:0;
+          transform: rotateZ(45deg);
+          transition: all ease-in-out 250ms;
+        }
+        &:before{
+          top:0;
+          transform: rotateZ(-45deg);
+          transition: all ease-in-out 250ms;
+        }
+      }
+      &::after, &::before {
+        content: '';
+        height: 4px;
+      }
+      &::after {
+        top:9px;
+      }
+      &::before {
+        top:-9px;
+      }
+    }
+  }
+}
+
+
 .burger_active {
   background-color: transparent;
   &::after, &::before {
@@ -54,18 +89,28 @@
     height: 6px;
     background-color: $akcentColor;
     position: absolute;
-    left:0;
+    left: 0;
     transition: all ease-in-out 250ms;
   }
-  &:after{
-    top:0;
+  &:after {
+    top: 0;
     transform: rotateZ(45deg);
     transition: all ease-in-out 250ms;
   }
-  &:before{
-    top:0;
+  &:before {
+    top: 0;
     transform: rotateZ(-45deg);
     transition: all ease-in-out 250ms;
+  }
+}
+
+@include breakpoint(small down) {
+  .burger_active {
+    background-color: transparent;
+    &::after, &::before {
+      content: '';
+      height: 4px;
+    }
   }
 }
 

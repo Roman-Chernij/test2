@@ -13,21 +13,9 @@
   @media (min-width: 1020px) {
     display: block;
   }
-  @media (min-width: 1200px) {
-    padding-left: 64px;
-  }
     &__nav-list {
       margin-bottom: 0.71rem;
       margin-left: 0;
-      padding-left: 20px;
-      float: none;
-      @media (min-width: 1111px) {
-        margin-left: 1.25rem;
-      }
-      @media (min-width: 1020px) {
-        padding-left: 0;
-        float: right;
-      }
     }
 }
 

@@ -1,33 +1,10 @@
 .box {
-  &__date {
-    color: #78acd7;
-    font-family: $fourFont;
-    font-size: 24.6px;
-  }
-  &__text {
-    font-family: $fontMedium;
-    margin-top: 10px;
-    line-height: 1.45;
-    margin-bottom: 1.39rem;
-    font-size: 15.3px;
-    overflow: hidden;
-  }
   &__info {
     font-family: $fondBold;
     font-size: 15.5px;
     color: inherit;
     transition: color ease-in-out 350ms;
-    >a {
-      text-decoration: none;
-      &:hover {
-        color: #0f578b;
-        transition: color ease-in-out 350ms;
-      }
-      &:active {
-        color: #104475;
-        transition: color ease-in-out 250ms;
-      }
-    }
+
   }
   &__img {
     width: 169px;
@@ -50,20 +27,40 @@
     &:after {
       clear: both;
     }
+    >a {
+      &:hover {
+        color: #0f578b;
+        transition: color ease-in-out 350ms;
+      }
+      &:active {
+        color: #104475;
+        transition: color ease-in-out 250ms;
+      }
+    }
   }
 }
 
-.event__box_mod-margin {
-  margin-top: 45px;
+.date {
+  color: #78acd7;
+  font-family: $fourFont;
+  font-size: 24.6px;
+  margin-bottom: 10px;
+  display: block;
 }
+
 
 .coloms_mod {
   padding: 0;
 }
 
-.event__box:last-child {
-    .box__info {
-      padding-right: 81px;
-      display: block;
-    }
+.event__box {
+  margin-bottom: 45px;
+  font-family: $fontMedium;
+  p {
+    font-size: 15.3px;
+  }
+}
+
+.event__info {
+  overflow: hidden;
 }

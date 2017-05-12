@@ -126,7 +126,7 @@ $bg-colorHover-4: #145f85;
 
 }
 
-.icon-down-small:before { content: '\e800'; } /* '' */
+.icon-down-small:before { content: '\e800'; transform: rotate(0deg);transition: transform ease-in-out 300ms;} /* '' */
 .icon-menu:before { content: '\e801'; } /* '' */
 .icon-youtube:before { content: '\e802'; } /* '' */
 .icon-right-small:before { content: '\e803'; } /* '' */
